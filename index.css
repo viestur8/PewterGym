@@ -22,3 +22,8 @@
       height: 10%; }
 
 /*# sourceMappingURL=index.css.map */
+html {
+  background: url(giphy.gif) repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
