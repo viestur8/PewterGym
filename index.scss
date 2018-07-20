@@ -1,29 +1,34 @@
-#main{
-    border:1px solid black;
-    display:flex;
-    flex-direction:column;
-    height:100%;
-    #profiles {
+body {
+    background-color:#BBB6B1;
+    #main{
         border:1px solid black;
         display:flex;
-        flex-direction:row;
-        justify-items: center;
-        height:50%;
-        .images {
-            img {
-                width:25%;
+        flex-direction:column;
+        height:100%;
+        #profiles {
             border:1px solid black;
-            }   
+            display:flex;
+            flex-direction:row;
+            justify-items: center;
+            height:50%;
+            .images {
+                img {
+                    width:25%;
+                border:1px solid black;
+                }   
+            }
         }
-    }
-    #display {
-        border:1px solid black;
-        display:flex;
-        flex-direction: row;
-        height:50%;
-        img {
-            width:10%;
-            height:10%;
+        #display {
+            border:1px solid black;
+            display:flex;
+            flex-direction: row;
+            height:50%;
+            img {
+                width:10%;
+                height:10%;
+            }
         }
     }
 }
+
+
