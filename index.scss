@@ -18,24 +18,36 @@ body{
     @include flexbox(flex, column, flex-start, flex-start);
     
     header{
-        @include flexbox(flex, column, flex-start, center);
-        img {
-            width: 15%;
+        @include flexbox(flex, row, center , center);
+
+       h1{
+           width: 70%;
+       }
+        #badge-info{
+            @include flexbox(flex, column, center, center);
+        }
+        .badge {
+            margin-left: 20px;
+            width: 5%;
             height: auto;
         }
     }
-    .wrapper{
-        @include flexbox(flex, row, center, space-between);
-    }
+    
     #gym-info{
-        width: 500px;
+        background-color: lightgray;
+        border: 5px inset darkgray;
+        border-radius: 10px;
+        color: black;
+        font-size: 80%;
+        width: 450px;
     }
+
     #trainer-div {
         @include flexbox(flex, column, flex-start, center);
         max-width: 600px;
 
-        .trainer-header{
-            @include flexbox(flex, row, flex-start, center);
+        .trainer-name{
+           font-size: 80%;
             
         }
         .trainer-content{
