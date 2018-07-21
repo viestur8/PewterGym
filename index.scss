@@ -52,7 +52,9 @@ body{
             }   
         }
         .pokeball{
+            @include flexbox (flex, column, center, flex-start);
             border: 1px solid lightgray;
+            text-align: center;
         }
         
     }
@@ -60,8 +62,11 @@ body{
         @include flexbox (flex, row, center, center);
         background-color: lightgray;
         color: black;
+        font-size: 70%;
+        text-transform: uppercase;
+       
         img {
-            width:10%;
+            width:30%;
             height:auto;
         }
     }

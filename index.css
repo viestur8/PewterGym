@@ -55,16 +55,23 @@ body {
         width: 70%;
         height: auto; }
     #main #trainer-div .pokeball {
-      border: 1px solid lightgray; }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      border: 1px solid lightgray;
+      text-align: center; }
   #main #display {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: lightgray;
-    color: black; }
+    color: black;
+    font-size: 70%;
+    text-transform: uppercase; }
     #main #display img {
-      width: 10%;
+      width: 30%;
       height: auto; }
 
 /*# sourceMappingURL=index.css.map */
