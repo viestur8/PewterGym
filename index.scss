@@ -1,34 +1,133 @@
-body {
-    background-color:#BBB6B1;
-    #main{
-        border:1px solid black;
-        display:flex;
-        flex-direction:column;
-        height:100%;
-        #profiles {
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import 'mixins';
+
+body{
+    font : {
+        family: 'Press Start 2P', cursive;
+        size: 14px;
+    }
+    color: lightgray;
+    // background-image: url("onyxwallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    line-height: 1.5;
+    padding: 15px;
+}
+#main {
+    @include flexbox(flex, column, center, center);
+    header {
+        @include flexbox(flex, column, center , center);
+        h1 {
+           width: 100%;
+           font-size: 3vh;
+           border:1px solid black;
+           text-align: center;
+           margin-bottom:10%;
+           animation: type 3s steps(60, end); 
+           overflow: hidden;
+           white-space: nowrap;
+           text-shadow: 2px 2px 20px rgb(146, 199, 164)
+       }
+        #badge-info {
             border:1px solid black;
-            display:flex;
-            flex-direction:row;
-            justify-items: center;
-            height:50%;
-            .images {
-                img {
-                    width:25%;
-                border:1px solid black;
-                }   
+            @include flexbox(flex, column, center, center);
+        }
+        .badge {
+            margin-left: 20px;
+            width: 40%;
+            height: auto;
+           opacity:1;
+           animation:zoomIn 3s forwards;
+        }
+    }
+
+    #gym-info {
+        border:3px solid black;
+        background-color: lightgray;
+        border: 5px inset darkgray;
+        box-shadow: 2px 2px 4px 2px gray;
+        border-radius: 10px;
+        color: black;
+        font-size: 80%;
+        width: 70%;
+    }
+
+    #trainer-div {
+        @include flexbox(flex, column, flex-start, center);
+        max-width: 600px;
+        margin-top:5%;
+
+        .trainer-name {
+           font-size: 80%;
+        }
+        .trainer-content {
+            @include flexbox(flex, row, center, center);
+        }
+        .trainer{
+            @include flexbox(flex, column, center, center);
+            img.trainer-image {
+                width: 70%;
+                transform:scale(1);
+                transition-duration: 0.8s;
+                box-shadow: 10px 5px 30px 0px lightgrey;
+            }
+            
+            img.trainer-image:hover{
+                transform: scale(1.5);
+                transition-duration: 0.8s;
             }
         }
-        #display {
-            border:1px solid black;
-            display:flex;
-            flex-direction: row;
-            height:50%;
-            img {
-                width:10%;
-                height:10%;
-            }
+        .pokeball{
+            @include flexbox (flex, column, center, flex-start);
+            border: 1px solid lightgray;
+            text-align: center;
+        }
+        
+    }
+    #display {
+        @include flexbox (flex, row, center, center);
+        background-color: lightgray;
+        color: black;
+        font-size: 70%;
+        text-transform: uppercase;
+        margin-top:10%;
+       
+        img {
+            width:33%;
+            height:auto;
         }
     }
 }
 
 
+
+
+
+@keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    25% {
+      opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.5;
+      }
+  }
+
+
+  @keyframes type{ 
+    from { width: 0; }
+  } 
+
+
+  @keyframes type2{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; } 
+  } 
