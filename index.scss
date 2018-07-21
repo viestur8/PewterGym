@@ -1,29 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import 'mixins';
+
+body{
+    background-image: url("onyxwallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: lightgray;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.5;
+    padding: 15px;
+}
 #main{
-    border:1px solid black;
-    display:flex;
-    flex-direction:column;
-    height:100%;
-    #profiles {
-        border:1px solid black;
-        display:flex;
-        flex-direction:row;
-        justify-items: center;
-        height:50%;
+    @include flexbox(flex, column, flex-start, flex-start);
+    
+    header{
+        @include flexbox(flex, column, flex-start, center);
+        img {
+            width: 15%;
+            height: auto;
+        }
+    }
+    .wrapper{
+        @include flexbox(flex, row, center, space-between);
+    }
+    #gym-info{
+        width: 500px;
+    }
+    #trainer-div {
+        @include flexbox(flex, column, flex-start, center);
+        border: 1px solid lightgray;
+        .trainer-content{
+            @include flexbox(flex, row, center, center);
+        }
+        .trainer{
+            padding: 20px;
+        }
         .images {
             img {
                 width:25%;
-            border:1px solid black;
+                height: auto;
             }   
         }
     }
     #display {
-        border:1px solid black;
-        display:flex;
-        flex-direction: row;
-        height:50%;
+        @include flexbox (flex, row, center, center);
         img {
             width:10%;
-            height:10%;
+            height:auto;
         }
     }
 }

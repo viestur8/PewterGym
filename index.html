@@ -1,26 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Gym</title>
+    <link rel="icon" href="badge.png">
+    <title>Pewter Gym</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    <script src="main.js"></script>
 </head>
+
 <body>
-    <div id="main">
-        <section id="profiles">
-            <div class="images"><img src="ash.png" alt="trainer"></div>
-            <div class="images"><img src="ash.png" alt="trainer"></div>
-            <div class="images"><img src="ash.png" alt="trainer"></div>
-            <div class="images"><img src="ash.png" alt="trainer"></div>
+    <section id="main">
+        <header>
+            <h1>PEWTER CITY GYM</h1>
+            <div id="gym-info">
+                <ul>
+                    <li>Location: Pewter City</li>
+                    <li>Dominant Type Pokémon: Rock</li>
+                    <li>Gym Leader: ????</li>
+                    <li>Badge: Boulder Badge</li>
+                </ul>
+            </div>
+        </header>
+        <section id="trainer-div">
+            <h1 class="trainer-header">
+                GYM TRAINERS
+            </h1>
+            <div class="trainer-content">
+                <div class="trainer" id="Anna">
+                    <div class="trainer-name">Anna</div>
+                    <div class="trainer-image"></div>
+                </div>
+                <div class="trainer" id="Jennifer">
+                    <div class="trainer-name">Jennifer</div>
+                    <div class="trainer-image"></div>
+                </div>
+                <div class="trainer" id="Lisa">
+                    <div class="trainer-name">Lisa</div>
+                    <div class="trainer-image"></div>
+                </div>
+                <div class="trainer" id="Viesturs">
+                    <div class="trainer-name">Viesturs</div>
+                    <div class="trainer-image"></div>
+                </div>
+            </div>
         </section>
         <section id="display">
-            <img src="badge.png" alt="badge">
-           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam facere doloremque perferendis, accusantium modi animi ipsum quaerat explicabo corrupti inventore assumenda tenetur, debitis corporis. Quis placeat culpa doloremque necessitatibus libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate veniam saepe inventore quisquam dolore mollitia laboriosam ad eos minima obcaecati adipisci sunt quaerat id, consectetur eaque quas accusantium debitis odit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, cupiditate. Voluptas veniam nostrum dolor culpa. Ipsum, repellat praesentium minus illum dolores, maxime atque numquam voluptate unde neque provident iste! Accusantium.
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto laborum nesciunt vero quam, cumque possimus distinctio quisquam deserunt, quibusdam odit. Ipsa pariatur necessitatibus tenetur nesciunt, deserunt non amet esse.
+
         </section>
-    </div>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="pokemon.js"></script>
+        <script src="gymtrainer.js"></script>
+        <script src="script.js"></script>
 </body>
+
 </html>
