@@ -3,9 +3,9 @@ let jennifer = new Trainer('Jennifer');
 let lisa = new Trainer('Lisa');
 let viesturs = new Trainer('Viesturs');
 
-anna.add("poliwrath");
+anna.add("blastoise");
 anna.add("poliwhirl");
-anna.add("pikachu");
+anna.add("poliwrath");
 
 jennifer.add('dewgong');
 jennifer.add('starmie');

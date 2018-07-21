@@ -2,12 +2,15 @@
 @import 'mixins';
 
 body{
+    font : {
+        family: 'Press Start 2P', cursive;
+        size: 14px;
+    }
+    color: lightgray;
     background-image: url("onyxwallpaper.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
-    color: lightgray;
-    font-family: 'Press Start 2P', cursive;
     line-height: 1.5;
     padding: 15px;
 }
@@ -29,22 +32,34 @@ body{
     }
     #trainer-div {
         @include flexbox(flex, column, flex-start, center);
-        border: 1px solid lightgray;
+        max-width: 600px;
+
+        .trainer-header{
+            @include flexbox(flex, row, flex-start, center);
+            
+        }
         .trainer-content{
             @include flexbox(flex, row, center, center);
+            
         }
         .trainer{
-            padding: 20px;
-        }
-        .images {
-            img {
-                width:25%;
+            @include flexbox(flex, column, center, center);
+            
+
+            img.trainer-image {
+                width: 70%;
                 height: auto;
             }   
         }
+        .pokeball{
+            border: 1px solid lightgray;
+        }
+        
     }
     #display {
         @include flexbox (flex, row, center, center);
+        background-color: lightgray;
+        color: black;
         img {
             width:10%;
             height:auto;

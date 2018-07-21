@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+body {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  color: lightgray;
+  background-image: url("onyxwallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  line-height: 1.5;
+  padding: 15px; }
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; }
+  #main header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+    #main header img {
+      width: 15%;
+      height: auto; }
+  #main .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+  #main #gym-info {
+    width: 500px; }
+  #main #trainer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 600px; }
+    #main #trainer-div .trainer-header {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center; }
+    #main #trainer-div .trainer-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+    #main #trainer-div .trainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      #main #trainer-div .trainer img.trainer-image {
+        width: 70%;
+        height: auto; }
+    #main #trainer-div .pokeball {
+      border: 1px solid lightgray; }
+  #main #display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    color: black; }
+    #main #display img {
+      width: 10%;
+      height: auto; }
+
+/*# sourceMappingURL=index.css.map */
