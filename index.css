@@ -1,66 +1,143 @@
-/*
-Error: Invalid CSS after "...center, center)": expected "{", was ";"
-        on line 45 of /Users/solidgold/WDF/classWork/pewterGym/index.scss
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+body {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  color: lightgray;
+  background-image: url("onyxwallpaperrev.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  line-height: 1.5;
+  padding: 15px; }
 
-40:        h1{
-41:            width: 70%;
-42:        }
-43:         #badge-info{
-44: >>>>>>> origin/gym-info
-45:             @include flexbox(flex, column, center, center);
-46:         }
-47:         .badge {
-48:             margin-left: 20px;
-49: <<<<<<< HEAD
-50:             width: 40%;
+#main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center; }
+  #main header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #main header h1 {
+      width: 100%;
+      font-size: 3vh;
+      text-align: center;
+      margin-bottom: 10%;
+      animation: type 3s steps(60, end);
+      overflow: hidden;
+      white-space: nowrap;
+      text-shadow: 2px 2px 20px #92c7a4; }
+    #main header #badge-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+    #main header .badge {
+      margin-left: 20px;
+      width: 40%;
+      height: auto;
+      opacity: 1;
+      animation: zoomIn 3s forwards; }
+  #main .gym-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #main #gym-info {
+    background-color: lightgray;
+    border: 5px inset darkgray;
+    box-shadow: 2px 2px 4px 2px gray;
+    border-radius: 10px;
+    color: black;
+    font-size: 70%;
+    width: 85%;
+    padding-left: 40px; }
+  #main #trainer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin-top: 5%; }
+    #main #trainer-div .trainer-name {
+      font-size: 80%;
+      padding-top: 20px; }
+    #main #trainer-div .trainer-content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: center; }
+    #main #trainer-div .trainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: scale(1);
+      transition-duration: 0.8s; }
+      #main #trainer-div .trainer img.trainer-image {
+        width: 70%;
+        transform: scale(1);
+        transition-duration: 0.8s;
+        animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px; }
+      #main #trainer-div .trainer img.trainer-image:hover {
+        transform: scale(1.3);
+        transition-duration: 0.8s;
+        box-shadow: 10px 5px 30px 0px lightgrey; }
+    #main #trainer-div .pokeball {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      width: 200px; }
+  #main #display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    color: black;
+    font-size: 70%;
+    text-transform: uppercase;
+    margin-top: 5%;
+    width: 600px;
+    border-radius: 10px; }
+    #main #display img {
+      width: 33%;
+      height: auto; }
 
-Backtrace:
-/Users/solidgold/WDF/classWork/pewterGym/index.scss:45
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...center, center)\": expected \"{\", was \";\"\A         on line 45 of /Users/solidgold/WDF/classWork/pewterGym/index.scss\A \A 40:        h1{\A 41:            width: 70%;\A 42:        }\A 43:         #badge-info{\A 44: >>>>>>> origin/gym-info\A 45:             @include flexbox(flex, column, center, center);\A 46:         }\A 47:         .badge {\A 48:             margin-left: 20px;\A 49: <<<<<<< HEAD\A 50:             width: 40%;"; }
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  25% {
+    opacity: 0.2; }
+  50% {
+    opacity: 0.5; } }
+@keyframes type {
+  from {
+    width: 0; } }
+@keyframes type2 {
+  0% {
+    width: 0; }
+  50% {
+    width: 0; }
+  100% {
+    width: 100; } }
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0); } }
+
+/*# sourceMappingURL=index.css.map */
