@@ -14,7 +14,6 @@ body{
     line-height: 1.5;
     padding: 15px;
 }
-<<<<<<< HEAD
 #main {
     @include flexbox(flex, row, flex-start, center);
     header {
@@ -30,33 +29,16 @@ body{
            text-shadow: 2px 2px 20px rgb(146, 199, 164)
        }
         #badge-info {
-=======
-#main{
-    @include flexbox(flex, column, flex-start, flex-start);
-    
-    header{
-        @include flexbox(flex, row, center , center);
-
-       h1{
-           width: 70%;
-       }
-        #badge-info{
->>>>>>> origin/gym-info
             @include flexbox(flex, column, center, center);
         }
         .badge {
             margin-left: 20px;
-<<<<<<< HEAD
             width: 40%;
-=======
-            width: 5%;
->>>>>>> origin/gym-info
             height: auto;
             opacity:1;
             animation:zoomIn 3s forwards;
         }
     }
-<<<<<<< HEAD
     .gym-content{
         @include flexbox(flex, column, center, center);
     }
@@ -69,16 +51,6 @@ body{
         font-size: 70%;
         width: 85%;
         padding-left: 40px;
-=======
-    
-    #gym-info{
-        background-color: lightgray;
-        border: 5px inset darkgray;
-        border-radius: 10px;
-        color: black;
-        font-size: 80%;
-        width: 450px;
->>>>>>> origin/gym-info
     }
 
     #trainer-div {
@@ -86,15 +58,9 @@ body{
         max-width: 600px;
         margin-top:5%;
 
-<<<<<<< HEAD
         .trainer-name {
            font-size: 80%;
            padding-top: 20px;
-=======
-        .trainer-name{
-           font-size: 80%;
-            
->>>>>>> origin/gym-info
         }
         .trainer-content {
             @include flexbox(flex, row, flex-end, center);
