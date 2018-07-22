@@ -1,35 +1,30 @@
 let anna = new Trainer('Anna');
-let jennifer = new Trainer('Jennifer');
-let lisa = new Trainer('Lisa');
-let viesturs = new Trainer('Viesturs');
+let madame = new Trainer('Madame');
+let logan = new Trainer('Logan');
+let homer = new Trainer('Homer');
 
 anna.add("blastoise");
 anna.add("poliwhirl");
 anna.add("poliwrath");
 
-jennifer.add('dewgong');
-jennifer.add('starmie');
-jennifer.add('marill');
+//jennifer
+madame.add('dewgong');
+madame.add('starmie');
+madame.add('marill');
 
-lisa.add('psyduck');
-lisa.add('slowbro');
-lisa.add('snorlax');
+//lisa
+logan.add('psyduck');
+logan.add('slowbro');
+logan.add('snorlax');
 
-// lisa.add('54');
-// lisa.add('143');
-// lisa.add('80');
-
-viesturs.add('pignite'); // 499
-viesturs.add('granbull'); // 210
-viesturs.add('gligar'); // 207
-
-// viesturs.add('499'); // 499
-// viesturs.add('210'); // 210
-// viesturs.add('207'); // 207
+//viesturs
+homer.add('pignite'); // 499
+homer.add('granbull'); // 210
+homer.add('gligar'); // 207
 
 anna.renderTrainer();
-jennifer.renderTrainer();
-lisa.renderTrainer();
-viesturs.renderTrainer();
+madame.renderTrainer();
+logan.renderTrainer();
+homer.renderTrainer();
 
 // setTimeout(viesturs.renderTrainer(), 10000);

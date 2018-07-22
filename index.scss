@@ -59,7 +59,7 @@ body{
         margin-top:5%;
 
         .trainer-name {
-           font-size: 80%;
+           font-size: 65%;
            padding-top: 20px;
         }
         .trainer-content {
@@ -72,7 +72,7 @@ body{
                 transition-duration: 0.8s;
             
             img.trainer-image{
-                width: 70%;
+                width: 80%;
                 transform: scale(1);
                 transition-duration: 0.8s;
                 animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
