@@ -6,15 +6,12 @@ class Trainer{
     }
 
     all(){
-        //no parameters
-        //returns an array of Pokemon objects
         return this.pokemonCaught;
     }
     
     add(pokemonObject) {
-        let newPokemon;
-        //`https://pokeapi-nycda.firebaseio.com/pokemon/` + pokemonObject + '.json'
-        axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonObject}/`).then(response => {
+        //https://pokeapi.co/api/v2/pokemon/${pokemonObject}/
+        axios.get(`https://pokeapi-nycda.firebaseio.com/pokemon/${pokemonObject}.json`).then(response => {
             let data = response.data;
             let pokemonName = data.name;
             let pokemonNumber = data.id;
@@ -29,16 +26,10 @@ class Trainer{
                 pokemonAbilities.push(" " + ability.ability.name);
             });
 
-            newPokemon = new Pokemon(pokemonName, pokemonNumber, pokemonType, pokeFrontPic, pokemonHp, pokemonAtk, pokemonDef, pokemonAbilities);
+            let newPokemon = new Pokemon(pokemonName, pokemonNumber, pokemonType, pokeFrontPic, pokemonHp, pokemonAtk, pokemonDef, pokemonAbilities);
         
-        this.pokemonCaught.push(newPokemon)
+        this.pokemonCaught.push(newPokemon);
         })
-        .then(() => {
-            if (this.pokemonCaught.length===3){
-                this.renderTrainer();
-            }
-        })
-        .catch(error => alert('error'));
     }
 
     renderTrainer() {
