@@ -48,8 +48,8 @@ body {
     box-shadow: 2px 2px 4px 2px gray;
     border-radius: 10px;
     color: black;
-    font-size: 80%;
-    width: 70%; }
+    font-size: 70%;
+    width: 30%; }
   #main #trainer-div {
     display: flex;
     flex-direction: column;
@@ -72,11 +72,11 @@ body {
       #main #trainer-div .trainer img.trainer-image {
         width: 70%;
         transform: scale(1);
-        transition-duration: 0.8s;
-        box-shadow: 10px 5px 30px 0px lightgrey; }
+        transition-duration: 0.8s; }
       #main #trainer-div .trainer img.trainer-image:hover {
         transform: scale(1.5);
-        transition-duration: 0.8s; }
+        transition-duration: 0.8s;
+        box-shadow: 10px 5px 30px 0px lightgrey; }
     #main #trainer-div .pokeball {
       display: flex;
       flex-direction: column;

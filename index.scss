@@ -49,8 +49,8 @@ body{
         box-shadow: 2px 2px 4px 2px gray;
         border-radius: 10px;
         color: black;
-        font-size: 80%;
-        width: 70%;
+        font-size: 70%;
+        width: 30%;
     }
 
     #trainer-div {
@@ -70,12 +70,12 @@ body{
                 width: 70%;
                 transform:scale(1);
                 transition-duration: 0.8s;
-                box-shadow: 10px 5px 30px 0px lightgrey;
             }
             
             img.trainer-image:hover{
                 transform: scale(1.5);
                 transition-duration: 0.8s;
+                box-shadow: 10px 5px 30px 0px lightgrey;
             }
         }
         .pokeball{
