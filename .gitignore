@@ -2,7 +2,7 @@
 npm-debug.log*
 
 #project dependencies
-nome_modules
+node_modules
 
 # OSX folder attributes
 
