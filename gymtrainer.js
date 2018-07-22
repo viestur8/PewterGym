@@ -68,7 +68,7 @@ class Trainer{
                     pokeStats.innerHTML = 'HP ' + pokemon.hp + '<br/>ATK ' + pokemon.atk + '<br/>DEF ' + pokemon.def; 
 
                     let pokeAbilities = document.createElement('p');
-                    pokeAbilities.innerHTML = 'ABILITIES <br/>' + pokemon.pokemonAbilities;
+                    pokeAbilities.innerHTML = 'ABILITIES <br/>' + pokemon.pokemonAbilities[0] + '<br/>' + pokemon.pokemonAbilities[1];
 
                 pokeBall.append(pokePic, pokeTag, pokeStats, pokeAbilities);
                 pokemonSection.append(pokeBall);
