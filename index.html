@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="badge.png">
+    <link rel="icon" href="badge1.png">
     <title>Pewter Gym</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
@@ -23,10 +23,12 @@
                 <ul>
                     <li>Location: Pewter City</li>
                     <li>Dominant Type Pokémon: Rock</li>
-                    <li>Gym Leader: Lisa</li>
-                    <li>Gym Trainers: Anna, Jennifer, Viesturs</li>
+                    <li>Badge: Boulder Badge</li>
+                    <li>Gym Leader: Logan</li>
+                    <li>Gym Trainers: Anna, Madame Zapphir, Homer</li>
                 </ul>
             </div>
+
     
         <div id="trainer-div">
             <section class="trainer-content">
@@ -52,9 +54,38 @@
                     <!--DOM Manipulation Happens Here -->
                 </div>
         </div>
+
+            <div id="trainer-div">
+                <section class="trainer-content">
+                    <div class="trainer" id="Logan">
+                        <img id="lisa" class="trainer-image" src="trainer_images/trainer_2.png" />
+                        <div class="trainer-name">Logan</div>
+                    </div>
+                    <div class="trainer" id="Anna">
+                        <img id="ana" class="trainer-image" src="trainer_images/trainer_7.png" />
+                        <div class="trainer-name">Anna</div>
+                    </div>
+                    <div class="trainer" id="Madame">
+                        <img id="jen" class="trainer-image" src="Madame3.png" />
+                        <div class="trainer-name">Madame Zapphir</div>
+                    </div>
+                    <div class="trainer" id="Homer">
+                        <img id="viesturs" class="trainer-image" src="trainer_images/trainer_3.png" />
+                        <div class="trainer-name">Homer</div>
+                    </div>
+                </section>
+
+                <div id="display">
+                    <!--DOM Manipulation Happens Here -->
+                </div>
+                
+            </div>
+            <iframe src="intro.wav" allow="autoplay"></iframe>
+
             <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
             <script src="pokemon.js"></script>
             <script src="gymtrainer.js"></script>
             <script src="script.js"></script>
 </body>
+
 </html>
