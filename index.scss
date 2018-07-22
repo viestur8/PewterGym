@@ -4,6 +4,12 @@
   flex-direction: column;
   height: 100%;
 
+  .body {
+    background: url(giphy.gif) repeat center center fixed;
+      background-size: cover;
+      
+  }
+
   #profiles {
     border: 1px solid black;
     display: flex;
@@ -13,7 +19,7 @@
 
     .images {
       img {
-        width: 35%;
+        width: 45%;
         border: 1px solid black;
       }
     }
@@ -24,9 +30,9 @@
     height: 50%;
 
     img {
-      // width: 10%;
-      // height: 10%;
-      max-width: 100%;
+      width: 10%;
+      height: 10%;
+      // max-width: 100%;
     }
   }
 }

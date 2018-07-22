@@ -3,6 +3,9 @@
   display: flex;
   flex-direction: column;
   height: 100%; }
+  #main .body {
+    background: url(giphy.gif) repeat center center fixed;
+    background-size: cover; }
   #main #profiles {
     border: 1px solid black;
     display: flex;
@@ -10,7 +13,7 @@
     justify-items: center;
     height: 50%; }
     #main #profiles .images img {
-      width: 25%;
+      width: 45%;
       border: 1px solid black; }
   #main #display {
     border: 1px solid black;
@@ -22,8 +25,3 @@
       height: 10%; }
 
 /*# sourceMappingURL=index.css.map */
-html {
-  background: url(giphy.gif) repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-}
