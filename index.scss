@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 @import 'mixins';
 
@@ -218,3 +219,43 @@ body{
         }
     }
   }
+=======
+#main {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .body {
+    background: url(giphy.gif) repeat center center fixed;
+      background-size: cover;
+      
+  }
+
+  #profiles {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    height: 50%;
+
+    .images {
+      img {
+        width: 45%;
+        border: 1px solid black;
+      }
+    }
+  } #display {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+
+    img {
+      width: 10%;
+      height: 10%;
+      // max-width: 100%;
+    }
+  }
+}
+>>>>>>> homer
