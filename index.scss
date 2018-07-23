@@ -54,7 +54,25 @@ body{
         color: black;
         font-size: 70%;
         width: 85%;
-        padding-left: 40px;
+        // padding-left: 40px;
+
+        a {
+            // z-index:-100;
+            display:flex;
+            transform:translateX(85%) translateY(25%);
+            position:absolute;
+            img {
+                width:10%;
+                height:10%;
+                animation:info 4s infinite;
+                transition-duration:0.5s;
+            }
+
+            img:hover {
+                transform: rotate(180deg);
+                transition:1s;
+            }
+        }
     }
 
     #trainer-div {
@@ -82,7 +100,6 @@ body{
                 transform: scale(1);
                 transition-duration: 0.8s;
                 animation: shake 0.8s;
-                // animation-delay: 3s;
                 backface-visibility: hidden;
                 perspective: 1000px;
             }
@@ -122,6 +139,7 @@ body{
         margin-top: 5%;
         width: 600px;
         border-radius: 10px;
+    
         
         p {
            animation: type 3s steps(5, end); 
@@ -228,4 +246,14 @@ body{
       -webkit-transform: scale3d(1, 1, 1);
       transform: scale3d(1, 1, 1);
     }
+  }
+
+
+
+  @keyframes info {
+      0%, 100% {
+          width:10%;
+      } 50% {
+          width:10.5%
+      }
   }

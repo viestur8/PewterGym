@@ -39,6 +39,7 @@ class Trainer{
         newTrainerContainer.addEventListener('click', e => {
             e.preventDefault();
             
+
             // DIV CLASS - 'trainer-pokemon'
             let pokemonSection = document.getElementById('display');
             pokemonSection.classList.add('trainer-pokemon');
@@ -67,3 +68,6 @@ class Trainer{
         });
     }
 }
+
+
+$().button('toggle')
