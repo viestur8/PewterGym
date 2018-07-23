@@ -99,16 +99,9 @@ body {
       #main #trainer-div .trainer img.trainer-image:hover {
         transform: scale(1.3);
         transition: transform 1s ease-in; }
-    #main #trainer-div .pokeball {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      text-align: center;
-      width: 200px; }
   #main #display {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: lightgray;
@@ -118,6 +111,18 @@ body {
     margin-top: 5%;
     width: 600px;
     border-radius: 10px; }
+    #main #display .trainer-pokemon {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+    #main #display .pokeball {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      width: 200px; }
     #main #display p {
       animation: type 3s steps(5, end);
       overflow: hidden;
@@ -293,10 +298,5 @@ body {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
-@keyframes homer {
-  from {
-    transform: translateX(0%); }
-  to {
-    transform: translateX(100%); } }
 
 /*# sourceMappingURL=index.css.map */

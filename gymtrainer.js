@@ -41,8 +41,12 @@ class Trainer{
             
             // DIV CLASS - 'trainer-pokemon'
             let pokemonSection = document.getElementById('display');
-            pokemonSection.classList.add('trainer-pokemon');
+            
             pokemonSection.innerHTML = '';
+
+            let tpokeName = document.createElement('p');
+            tpokeName = this.name;
+
             for (let pokemon of this.pokemonCaught) {
 
                 // SPAN CLASS - pokeball
@@ -62,7 +66,7 @@ class Trainer{
                     pokeAbilities.innerHTML = 'ABILITIES <br/>' + pokemon.pokemonAbilities[0] + '<br/>' + pokemon.pokemonAbilities[1];
 
                 pokeBall.append(pokePic, pokeTag, pokeStats, pokeAbilities);
-                pokemonSection.append(pokeBall);
+                pokemonSection.append(tpokeName, pokeBall);
             }
         });
     }

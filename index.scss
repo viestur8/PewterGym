@@ -114,15 +114,11 @@ body{
             }
 
         }
-        .pokeball{
-            @include flexbox (flex, column, center, flex-start);
-            text-align: center;
-            width: 200px;
-        }
+        
 
     }
     #display {
-        @include flexbox (flex, row, center, center);
+        @include flexbox (flex, column, center, center);
         background-color: lightgray;
         color: black;
         font-size: 70%;
@@ -131,7 +127,16 @@ body{
         width: 600px;
         border-radius: 10px;
 
+        .trainer-pokemon{
+            @include flexbox (flex, row, center, center);
+        }
 
+        .pokeball{
+            @include flexbox (flex, column, center, flex-start);
+            text-align: center;
+            width: 200px;
+        }
+        
         p {
            animation: type 3s steps(5, end);
            overflow: hidden;
@@ -348,17 +353,6 @@ body{
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
-
-@keyframes homer {
-    from {
-        transform:translateX(0%);
-    } to {
-        transform:translateX(100%);
-    }
-}
-
-
-
 
 // =======
 // #main {
