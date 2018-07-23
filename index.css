@@ -1,6 +1,6 @@
 /*
 Error: Invalid CSS after "@import ": expected "{", was "url('https://fo..."
-        on line 2 of /Users/solidgold/WDF/classWork/pewterGym/index.scss
+        on line 2 of /Users/lisachan/Desktop/WDF/Projects/03_PokemonGym/index.scss
 
 1: <<<<<<< HEAD
 2: @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
@@ -11,7 +11,7 @@ Error: Invalid CSS after "@import ": expected "{", was "url('https://fo..."
 7:         display: none;
 
 Backtrace:
-/Users/solidgold/WDF/classWork/pewterGym/index.scss:2
+/Users/lisachan/Desktop/WDF/Projects/03_PokemonGym/index.scss:2
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -35,4 +35,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"@import \": expected \"{\", was \"url('https://fo...\"\A         on line 2 of /Users/solidgold/WDF/classWork/pewterGym/index.scss\A \A 1: <<<<<<< HEAD\A 2: @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');\A 3: @import 'mixins';\A 4: \A 5: body{\A 6:     iframe {\A 7:         display: none;"; }
+  content: "Error: Invalid CSS after \"@import \": expected \"{\", was \"url('https://fo...\"\A         on line 2 of /Users/lisachan/Desktop/WDF/Projects/03_PokemonGym/index.scss\A \A 1: <<<<<<< HEAD\A 2: @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');\A 3: @import 'mixins';\A 4: \A 5: body{\A 6:     iframe {\A 7:         display: none;"; }
