@@ -148,7 +148,7 @@ body {
     transform: translate3d(-4px, 0, 0); }
   40%, 60% {
     transform: translate3d(4px, 0, 0); } }
-@media all and (max-width: 500px) {
+@media all and (max-width: 700px) {
   #main {
     /* On small screens, we are no longer using row direction but column */
     display: flex;
