@@ -11,9 +11,6 @@ body{
         size: 14px;
     }
     color: lightgray;
-    background-image: url("onyxwallpaperrev.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: black;
     line-height: 1.5;
     padding: 15px;
@@ -37,6 +34,14 @@ body{
        }
         #badge-info {
             @include flexbox(flex, column, center, center);
+        }
+
+        .onix-move {
+            position: relative;
+            -webkit-animation: onixmove 4s infinite; 
+            /* Safari 4.0 - 8.0 */
+            animation: onixmove 4s infinite;
+          
         }
         .badge {
             margin-left: 20px;
@@ -188,6 +193,7 @@ body{
       transform: translate3d(4px, 0, 0);
     }
   }
+
   @media all and (max-width: 700px) {
 
 
@@ -237,6 +243,37 @@ body{
     }
   }
 
+
+@-webkit-keyframes onixmove {
+  0%{
+    transform: translateY(0px)
+  }
+  50%{
+    transform: translateY(50px)
+  }
+  100%{
+    transform: translateY(0px)
+  }
+}
+
+@keyframes onixmove {
+    0%{
+        transform: translateY(0px)
+    }
+    50%{
+        transform: translateY(50px)
+    }
+    100%{
+        transform: translateY(0px)
+    }
+}
+
+  @media all and (max-width: 500px) {
+    body{
+        background-image: url("onyxwallpaperrev.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     #main {
       /* On small screens, we are no longer using row direction but column */
           @include flexbox(flex, column, flex-start, center);
@@ -244,6 +281,9 @@ body{
             @include flexbox(flex, column, center, center);
             #badge-info {
                 @include flexbox(flex, column, center, center);
+            }
+            #onix{
+                display:none;
             }
         }
         .gym-content{

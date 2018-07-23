@@ -3,9 +3,6 @@ body {
   font-family: 'Press Start 2P', cursive;
   font-size: 14px;
   color: lightgray;
-  background-image: url("onyxwallpaperrev.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   background-color: black;
   line-height: 1.5;
   padding: 15px; }
@@ -36,6 +33,11 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: center; }
+    #main header .onix-move {
+      position: relative;
+      -webkit-animation: onixmove 4s infinite;
+      /* Safari 4.0 - 8.0 */
+      animation: onixmove 4s infinite; }
     #main header .badge {
       margin-left: 20px;
       width: 40%;
@@ -155,6 +157,28 @@ body {
   40%, 60% {
     transform: translate3d(4px, 0, 0); } }
 
+@-webkit-keyframes onixmove {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(50px); }
+  100% {
+    transform: translateY(0px); } }
+@keyframes onixmove {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(50px); }
+  100% {
+    transform: translateY(0px); } }
+@media all and (max-width: 500px) {
+  body {
+    background-image: url("onyxwallpaperrev.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+
+
 @keyframes bounceIn {
   from,
     20%,
@@ -187,6 +211,7 @@ body {
     transform: scale3d(1, 1, 1); } }
 
 @media all and (max-width: 700px) {
+
   #main {
     /* On small screens, we are no longer using row direction but column */
     display: flex;
@@ -203,6 +228,8 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center; }
+      #main header #onix {
+        display: none; }
     #main .gym-content {
       display: flex;
       flex-direction: column;
