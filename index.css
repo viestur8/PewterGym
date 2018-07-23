@@ -118,6 +118,12 @@ body {
     margin-top: 5%;
     width: 600px;
     border-radius: 10px; }
+    #main #display p {
+      animation: type 3s steps(5, end);
+      overflow: hidden;
+      width: 100%;
+      white-space: nowrap;
+      animation: bounceIn 3s; }
     #main #display img {
       width: 33%;
       height: auto; }
@@ -150,6 +156,7 @@ body {
     transform: translate3d(-4px, 0, 0); }
   40%, 60% {
     transform: translate3d(4px, 0, 0); } }
+
 @-webkit-keyframes onixmove {
   0% {
     transform: translateY(0px); }
@@ -169,6 +176,41 @@ body {
     background-image: url("onyxwallpaperrev.jpg");
     background-size: cover;
     background-repeat: no-repeat; }
+
+
+
+@keyframes bounceIn {
+  from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@media all and (max-width: 700px) {
 
   #main {
     /* On small screens, we are no longer using row direction but column */
@@ -226,5 +268,6 @@ body {
       justify-content: center;
       margin-top: 5%;
       width: 350px; } }
+
 
 /*# sourceMappingURL=index.css.map */
