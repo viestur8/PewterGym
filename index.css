@@ -263,5 +263,10 @@ body {
       justify-content: center;
       margin-top: 5%;
       width: 350px; } }
+@keyframes homer {
+  from {
+    transform: translateX(0%); }
+  to {
+    transform: translateX(100%); } }
 
 /*# sourceMappingURL=index.css.map */

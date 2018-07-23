@@ -67,3 +67,15 @@ class Trainer{
         });
     }
 }
+
+let pikahomerDiv = document.createElement('div');
+let pikahomer = document.createElement('img');
+pikahomer.src = "pokehomer.png";
+pikahomer.setAttribute("width", "10%");
+pikahomer.setAttribute("height", "auto");
+pikahomerDiv.appendChild(pikahomer);
+
+let onix = document.getElementById('onix');
+onix.addEventListener('click', e => {
+    window.appendChild(pikahomerDiv);
+})

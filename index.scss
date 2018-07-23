@@ -19,7 +19,6 @@ body{
 #main {
     @include flexbox(flex, row, flex-start, center);
 
-
     header {
         @include flexbox(flex, column, center, center);
         h1 {
@@ -50,6 +49,7 @@ body{
             opacity:1;
             animation:zoomIn 3s forwards;
         }
+    
     }
     .gym-content{
         @include flexbox(flex, column, center, center);
@@ -318,6 +318,17 @@ body{
     }
   }
 }
+
+@keyframes homer {
+    from {
+        transform:translateX(0%);
+    } to {
+        transform:translateX(100%);
+    }
+}
+
+
+
 
 // =======
 // #main {
