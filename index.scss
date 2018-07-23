@@ -38,10 +38,10 @@ body{
 
         .onix-move {
             position: relative;
-            -webkit-animation: onixmove 4s infinite; 
+            -webkit-animation: onixmove 4s infinite;
             /* Safari 4.0 - 8.0 */
             animation: onixmove 4s infinite;
-          
+
         }
         .badge {
             margin-left: 20px;
@@ -131,13 +131,13 @@ body{
         width: 600px;
         border-radius: 10px;
 
-        
+
         p {
-           animation: type 3s steps(5, end); 
+           animation: type 3s steps(5, end);
            overflow: hidden;
            width:100%;
            white-space: nowrap;
-           animation: bounceIn 3s; 
+           animation: bounceIn 3s;
         }
 
 
@@ -208,34 +208,34 @@ body{
       -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
       animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
-  
+
     0% {
       opacity: 0;
       -webkit-transform: scale3d(0.3, 0.3, 0.3);
       transform: scale3d(0.3, 0.3, 0.3);
     }
-  
+
     20% {
       -webkit-transform: scale3d(1.1, 1.1, 1.1);
       transform: scale3d(1.1, 1.1, 1.1);
     }
-  
+
     40% {
       -webkit-transform: scale3d(0.9, 0.9, 0.9);
       transform: scale3d(0.9, 0.9, 0.9);
     }
-  
+
     60% {
       opacity: 1;
       -webkit-transform: scale3d(1.03, 1.03, 1.03);
       transform: scale3d(1.03, 1.03, 1.03);
     }
-  
+
     80% {
       -webkit-transform: scale3d(0.97, 0.97, 0.97);
       transform: scale3d(0.97, 0.97, 0.97);
     }
-  
+
     to {
       opacity: 1;
       -webkit-transform: scale3d(1, 1, 1);
@@ -317,6 +317,8 @@ body{
         }
     }
   }
+}
+
 // =======
 // #main {
 //   border: 1px solid black;
@@ -357,4 +359,3 @@ body{
 //   }
 // }
 //
-
