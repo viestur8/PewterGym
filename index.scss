@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 @import 'mixins';
 
@@ -10,9 +11,6 @@ body{
         size: 14px;
     }
     color: lightgray;
-    background-image: url("onyxwallpaperrev.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: black;
     line-height: 1.5;
     padding: 15px;
@@ -20,6 +18,8 @@ body{
 
 #main {
     @include flexbox(flex, row, flex-start, center);
+
+
     header {
         @include flexbox(flex, column, center, center);
         h1 {
@@ -27,13 +27,21 @@ body{
            font-size: 3vh;
            text-align: center;
            margin-bottom:10%;
-           animation: type 3s steps(60, end); 
+           animation: type 3s steps(60, end);
            overflow: hidden;
            white-space: nowrap;
            text-shadow: 2px 2px 20px rgb(146, 199, 164)
        }
         #badge-info {
             @include flexbox(flex, column, center, center);
+        }
+
+        .onix-move {
+            position: relative;
+            -webkit-animation: onixmove 4s infinite;
+            /* Safari 4.0 - 8.0 */
+            animation: onixmove 4s infinite;
+
         }
         .badge {
             margin-left: 20px;
@@ -59,9 +67,10 @@ body{
         a {
             // z-index:-100;
             display:flex;
-            transform:translateX(85%) translateY(25%);
             position:absolute;
             img {
+                position:relative;
+                left:420px;
                 width:10%;
                 height:10%;
                 animation:info 4s infinite;
@@ -88,13 +97,13 @@ body{
 
         .trainer-content {
             @include flexbox(flex, row, flex-end, center);
-            
+
         }
         .trainer{
             @include flexbox(flex, column, center, center);
                 transform:scale(1);
                 transition-duration: 0.8s;
-            
+
             img.trainer-image{
                 width: 80%;
                 transform: scale(1);
@@ -106,7 +115,7 @@ body{
             #lisa {
                 animation-delay: 0.5s;
             }
-            #ana { 
+            #ana {
                 animation-delay: 1s;
             }
             #jen {
@@ -115,23 +124,23 @@ body{
             #viesturs {
                 animation-delay: 2s;
             }
-            
+
             img.trainer-image:hover{
                 transform: scale(1.3);
                 transition: transform 1s ease-in;
                 // box-shadow: 10px 5px 30px 0px lightgrey;
             }
-            
+
         }
         .pokeball{
             @include flexbox (flex, column, center, flex-start);
             text-align: center;
             width: 200px;
         }
-        
+
     }
     #display {
-        @include flexbox (flex, row, center, center);
+        @include flexbox (flex, column, center, center);
         background-color: lightgray;
         color: black;
         font-size: 70%;
@@ -139,15 +148,19 @@ body{
         margin-top: 5%;
         width: 600px;
         border-radius: 10px;
-    
-        
+
+        .poke-info {
+            @include flexbox(flex, row, center, center);
+        }
+
         p {
-           animation: type 3s steps(5, end); 
+           animation: type 3s steps(5, end);
            overflow: hidden;
            width:100%;
            white-space: nowrap;
-           animation: bounceIn 3s; 
+           animation: bounceIn 3s;
         }
+
 
         img {
             width:33%;
@@ -156,13 +169,149 @@ body{
     }
 }
 
+
+
+  @media all and (max-width: 700px) {
+
+  @media all and (max-width: 500px) {
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #main {
+      /* On small screens, we are no longer using row direction but column */
+          @include flexbox(flex, column, flex-start, center);
+        header {
+            @include flexbox(flex, column, center, center);
+            #badge-info {
+                @include flexbox(flex, column, center, center);
+            }
+            #onix{
+                display:none;
+            }
+        }
+        .gym-content{
+            @include flexbox(flex, column, center, center);
+        }
+        #gym-info {
+            padding-left: 0px;
+        }
+        #trainer-div {
+            @include flexbox(flex, column, center, center);
+            max-width: 600px;
+            margin-top:3%;
+
+            .trainer-content {
+                @include flexbox(flex, row, flex-start, center);
+            }
+            .trainer{
+                @include flexbox(flex, column, center, center);
+            }
+            .pokeball{
+                @include flexbox (flex, column, center, flex-start);
+                text-align: center;
+                width: 115px;
+            }
+        }
+        #display {
+            @include flexbox (flex, column, center, center);
+            margin-top: 5%;
+            width: 350px;
+            .poke-info {
+                @include flexbox(flex, row, center, center);
+            }
+
+        }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes bounceIn {
+  from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+
+
+
+
+@-webkit-keyframes onixmove {
+    0%{
+        transform: translateY(0px)
+    }
+    50%{
+        transform: translateY(50px)
+    }
+    100%{
+        transform: translateY(0px)
+    }
+}
+@keyframes onixmove {
+    0%{
+        transform: translateY(0px)
+    }
+    50%{
+        transform: translateY(50px)
+    }
+    100%{
+        transform: translateY(0px)
+    }
+}
+
+
+@keyframes info {
+    0%, 100% {
+        width:10%;
+    } 50% {
+        width:10.5%
+    }
+}
+
+
 @keyframes zoomIn {
     from {
       opacity: 0;
       -webkit-transform: scale3d(0.3, 0.3, 0.3);
       transform: scale3d(0.3, 0.3, 0.3);
     }
-  
+
     25% {
       opacity: 0.2;
     }
@@ -173,87 +322,25 @@ body{
   }
 
 
-  @keyframes type{ 
+  @keyframes type{
     from { width: 0; }
-  } 
+  }
 
 
-  @keyframes type2{
-    0%{width: 0;}
-    50%{width: 0;}
-    100%{ width: 100; } 
-  } 
-  
   @keyframes shake {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
     }
-    
+
     20%, 80% {
       transform: translate3d(2px, 0, 0);
     }
-  
+
     30%, 50%, 70% {
       transform: translate3d(-4px, 0, 0);
     }
-  
+
     40%, 60% {
       transform: translate3d(4px, 0, 0);
     }
-  }
-
-
-  @keyframes bounceIn {
-    from,
-    20%,
-    40%,
-    60%,
-    80%,
-    to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-  
-    0% {
-      opacity: 0;
-      -webkit-transform: scale3d(0.3, 0.3, 0.3);
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-  
-    20% {
-      -webkit-transform: scale3d(1.1, 1.1, 1.1);
-      transform: scale3d(1.1, 1.1, 1.1);
-    }
-  
-    40% {
-      -webkit-transform: scale3d(0.9, 0.9, 0.9);
-      transform: scale3d(0.9, 0.9, 0.9);
-    }
-  
-    60% {
-      opacity: 1;
-      -webkit-transform: scale3d(1.03, 1.03, 1.03);
-      transform: scale3d(1.03, 1.03, 1.03);
-    }
-  
-    80% {
-      -webkit-transform: scale3d(0.97, 0.97, 0.97);
-      transform: scale3d(0.97, 0.97, 0.97);
-    }
-  
-    to {
-      opacity: 1;
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-  }
-
-
-
-  @keyframes info {
-      0%, 100% {
-          width:10%;
-      } 50% {
-          width:10.5%
-      }
   }

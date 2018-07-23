@@ -38,8 +38,11 @@ class Trainer{
 
         newTrainerContainer.addEventListener('click', e => {
             e.preventDefault();
-            
+            let name = document.getElementById("name");
+            name.innerText=this.name;
 
+            let pokeInfo = document.createElement("div");
+            pokeInfo.classList.add('poke-info');
             // DIV CLASS - 'trainer-pokemon'
             let pokemonSection = document.getElementById('display');
             pokemonSection.classList.add('trainer-pokemon');
@@ -63,7 +66,9 @@ class Trainer{
                     pokeAbilities.innerHTML = 'ABILITIES <br/>' + pokemon.pokemonAbilities[0] + '<br/>' + pokemon.pokemonAbilities[1];
 
                 pokeBall.append(pokePic, pokeTag, pokeStats, pokeAbilities);
-                pokemonSection.append(pokeBall);
+                pokeInfo.appendChild(pokeBall);
+                
+                pokemonSection.append(name,pokeInfo);
             }
         });
     }
