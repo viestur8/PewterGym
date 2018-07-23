@@ -7,6 +7,7 @@
     <link rel="icon" href="badge1.png">
     <title>Pewter Gym</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
 
 </head>
@@ -15,7 +16,7 @@
     <section id="main">
         <header>
             <div id="badge-info">
-                <img class="badge" src="badge1.png" />
+                <img class="badge" src="badge1.png"/>
                 <h1>PEWTER CITY GYM</h1>
             </div>
             <div id="onix">
@@ -23,8 +24,16 @@
             </div>
 
         </header>
+
+        <div id="ex1" class="modal">
+            <h1>Pewter Gym</h1>
+            <p>Pewter City Gym is the official gym of Pewter City. Logan is the leader of the Pewter Gym located north of the Viridan Forest. Many Trainers come here to earn their first gym badge. This Gym specializes in Rock-type Pokémon. Though the designs change throughout the generations, the path is always the same. Beat Logan to earn the Boulder Badge.</p>
+          </div>
+        
+        
         <div class="gym-content">
             <div id="gym-info">
+                <a href="#ex1" rel="modal:open"><img src="pokeball.png" alt=""></a>
                 <ul>
                     <li>Location: Pewter City</li>
                     <li>Dominant Type Pokémon: Rock</li>
@@ -33,6 +42,7 @@
                     <li>Gym Trainers: Anna, Madame Zapphir, Homer</li>
                 </ul>
             </div>
+
             <div id="trainer-div">
                 <section class="trainer-content">
                     <div class="trainer" id="Logan">
@@ -52,13 +62,21 @@
                         <div class="trainer-name">Homer</div>
                     </div>
                 </section>
+                <div id="name"></div>
                 <div id="display">
                     <!--DOM Manipulation Happens Here -->
                 </div>
 
             </div>
             <iframe src="intro.wav" allow="autoplay"></iframe>
+
+
+
+            
             <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />            
             <script src="pokemon.js"></script>
             <script src="gymtrainer.js"></script>
             <script src="script.js"></script>
