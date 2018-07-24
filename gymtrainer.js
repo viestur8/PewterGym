@@ -70,31 +70,13 @@ class Trainer{
                     pokeAbilities.innerHTML = 'ABILITIES <br/>' + pokemon.pokemonAbilities[0] + '<br/>' + pokemon.pokemonAbilities[1];
 
                 pokeBall.append(pokePic, pokeTag, pokeStats, pokeAbilities);
-<<<<<<< HEAD
-                pokemonSection.append(tpokeName, pokeBall);
-=======
+
                 pokeInfo.appendChild(pokeBall);
                 
                 pokemonSection.append(name,pokeInfo);
->>>>>>> 9c50530c56a778ac2ea3d7c43e340bb25a0c13cc
+
             }
         });
     }
 }
 
-<<<<<<< HEAD
-let pikahomerDiv = document.createElement('div');
-let pikahomer = document.createElement('img');
-pikahomer.src = "pokehomer.png";
-pikahomer.setAttribute("width", "10%");
-pikahomer.setAttribute("height", "auto");
-pikahomerDiv.appendChild(pikahomer);
-
-let onix = document.getElementById('onix');
-onix.addEventListener('click', e => {
-    window.appendChild(pikahomerDiv);
-})
-=======
-
-$().button('toggle')
->>>>>>> 9c50530c56a778ac2ea3d7c43e340bb25a0c13cc

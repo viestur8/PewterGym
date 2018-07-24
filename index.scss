@@ -145,13 +145,10 @@ body{
         width: 600px;
         border-radius: 10px;
 
-<<<<<<< HEAD
-        .trainer-pokemon{
-            @include flexbox (flex, row, center, center);
-=======
+
         .poke-info {
             @include flexbox(flex, row, center, center);
->>>>>>> 9c50530c56a778ac2ea3d7c43e340bb25a0c13cc
+
         }
 
         .pokeball{
